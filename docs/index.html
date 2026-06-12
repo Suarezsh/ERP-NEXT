@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERP NEXT | Sistema ERP Empresarial</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+.glass{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+}
+
+.fade{
+animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.card:hover{
+transform:translateY(-8px);
+transition:.3s;
+}
+
+.hero{
+background:
+linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.95)),
+url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2000');
+background-size:cover;
+background-position:center;
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur border-b border-slate-700">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-cubes text-green-400 text-2xl"></i>
+<h1 class="font-bold text-xl">ERP NEXT</h1>
+</div>
+
+<div class="hidden md:flex gap-6 text-sm">
+<a href="#descripcion" class="hover:text-green-400">Descripción</a>
+<a href="#objetivos" class="hover:text-green-400">Objetivos</a>
+<a href="#tecnologias" class="hover:text-green-400">Tecnologías</a>
+<a href="#modulos" class="hover:text-green-400">Módulos</a>
+<a href="#scrum" class="hover:text-green-400">Scrum</a>
+<a href="#instalacion" class="hover:text-green-400">Instalación</a>
+</div>
+
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero min-h-screen flex items-center justify-center text-center px-6">
+
+<div class="fade max-w-5xl">
+
+<div class="mb-6">
+<i class="fa-solid fa-building-columns text-green-400 text-7xl"></i>
+</div>
+
+<h1 class="text-6xl font-extrabold mb-6">
+ERP NEXT
+</h1>
+
+<p class="text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+Sistema ERP empresarial de código abierto implementado mediante ERPNext y Frappe Framework,
+diseñado para integrar y optimizar procesos administrativos, financieros,
+comerciales y operativos.
+</p>
+
+<div class="flex flex-wrap justify-center gap-4">
+
+<a href="#descripcion"
+class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg font-semibold">
+Explorar Proyecto
+</a>
+
+<a href="https://github.com/Suarezsh/ERP-NEXT"
+class="border border-slate-500 px-8 py-4 rounded-lg hover:bg-slate-800">
+Repositorio GitHub
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section class="py-20 px-6">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6">
+
+<div class="glass p-6 rounded-xl text-center">
+<h3 class="text-4xl font-bold text-green-400">9</h3>
+<p>Módulos ERP</p>
+</div>
+
+<div class="glass p-6 rounded-xl text-center">
+<h3 class="text-4xl font-bold text-green-400">16</h3>
+<p>Versión ERPNext</p>
+</div>
+
+<div class="glass p-6 rounded-xl text-center">
+<h3 class="text-4xl font-bold text-green-400">5</h3>
+<p>Integrantes</p>
+</div>
+
+<div class="glass p-6 rounded-xl text-center">
+<h3 class="text-4xl font-bold text-green-400">100%</h3>
+<p>Open Source</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- DESCRIPCION -->
+
+<section id="descripcion" class="py-20 px-6">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-10">
+<i class="fa-solid fa-circle-info text-green-400"></i>
+ Descripción del Proyecto
+</h2>
+
+<div class="glass p-8 rounded-xl">
+
+<p class="text-slate-300 leading-8">
+ERP NEXT es una solución ERP basada en software libre que permite gestionar
+de forma centralizada clientes, ventas, compras, inventarios, finanzas,
+recursos humanos, proyectos y producción.
+Su objetivo es mejorar la eficiencia operativa, reducir errores manuales
+y proporcionar información en tiempo real para la toma de decisiones.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- OBJETIVOS -->
+
+<section id="objetivos" class="py-20 px-6 bg-slate-900">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-10">
+<i class="fa-solid fa-bullseye text-green-400"></i>
+ Objetivos
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="glass p-6 rounded-xl">
+<h3 class="font-bold text-xl mb-4">Objetivo General</h3>
+<p>
+Implementar una plataforma ERP basada en ERPNext para optimizar
+la gestión empresarial mediante la integración de procesos.
+</p>
+</div>
+
+<div class="glass p-6 rounded-xl">
+<h3 class="font-bold text-xl mb-4">Objetivos Específicos</h3>
+
+<ul class="space-y-2">
+<li>✔ Centralizar información empresarial</li>
+<li>✔ Automatizar procesos administrativos</li>
+<li>✔ Optimizar ventas y compras</li>
+<li>✔ Mejorar inventarios</li>
+<li>✔ Gestionar finanzas</li>
+<li>✔ Incrementar productividad</li>
+<li>✔ Aplicar Scrum</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INTEGRANTES -->
+
+<section class="py-20 px-6">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-10">
+<i class="fa-solid fa-users text-green-400"></i>
+ Integrantes y Roles
+</h2>
+
+<div class="overflow-x-auto">
+
+<table class="w-full glass rounded-xl overflow-hidden">
+
+<thead class="bg-green-600">
+<tr>
+<th class="p-4 text-left">Integrante</th>
+<th class="p-4 text-left">Rol</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr class="border-b border-slate-700">
+<td class="p-4">Fernandez Lastarria, Valerio Piero</td>
+<td class="p-4">Scrum Master 1</td>
+</tr>
+
+<tr class="border-b border-slate-700">
+<td class="p-4">Suarez Huamani, Marco Antonio</td>
+<td class="p-4">Scrum Master 2</td>
+</tr>
+
+<tr class="border-b border-slate-700">
+<td class="p-4">Condori Catunta, Joselin Sharon</td>
+<td class="p-4">Backend Developer</td>
+</tr>
+
+<tr class="border-b border-slate-700">
+<td class="p-4">Rojas Condori, Fabiana Paola</td>
+<td class="p-4">Frontend Developer</td>
+</tr>
+
+<tr>
+<td class="p-4">Velazque Quispe, Flor De Liz</td>
+<td class="p-4">QA & Testing</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TECNOLOGIAS -->
+
+<section id="tecnologias" class="py-20 px-6 bg-slate-900">
+
+<div class="max-w-7xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-12">
+<i class="fa-solid fa-microchip text-green-400"></i>
+ Tecnologías Utilizadas
+</h2>
+
+<div class="grid md:grid-cols-4 gap-6">
+
+<div class="glass p-6 rounded-xl card">
+<i class="fa-brands fa-python text-4xl text-green-400"></i>
+<h3 class="mt-4 font-bold">Backend</h3>
+<p>Python<br>Frappe v16<br>ERPNext v16</p>
+</div>
+
+<div class="glass p-6 rounded-xl card">
+<i class="fa-brands fa-vuejs text-4xl text-green-400"></i>
+<h3 class="mt-4 font-bold">Frontend</h3>
+<p>Vue.js<br>HTML5<br>CSS3<br>JavaScript</p>
+</div>
+
+<div class="glass p-6 rounded-xl card">
+<i class="fa-solid fa-database text-4xl text-green-400"></i>
+<h3 class="mt-4 font-bold">Base de Datos</h3>
+<p>MariaDB</p>
+</div>
+
+<div class="glass p-6 rounded-xl card">
+<i class="fa-brands fa-docker text-4xl text-green-400"></i>
+<h3 class="mt-4 font-bold">DevOps</h3>
+<p>Docker<br>Docker Compose<br>GitHub Actions</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MODULOS -->
+
+<section id="modulos" class="py-20 px-6">
+
+<div class="max-w-7xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-12">
+<i class="fa-solid fa-layer-group text-green-400"></i>
+ Módulos ERP
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="glass p-6 rounded-xl card">CRM</div>
+<div class="glass p-6 rounded-xl card">Sales</div>
+<div class="glass p-6 rounded-xl card">Buying</div>
+<div class="glass p-6 rounded-xl card">Stock</div>
+<div class="glass p-6 rounded-xl card">Accounts</div>
+<div class="glass p-6 rounded-xl card">HR</div>
+<div class="glass p-6 rounded-xl card">Projects</div>
+<div class="glass p-6 rounded-xl card">Manufacturing</div>
+<div class="glass p-6 rounded-xl card">Reports</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ARQUITECTURA -->
+
+<section class="py-20 px-6 bg-slate-900">
+
+<div class="max-w-4xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold mb-12">
+<i class="fa-solid fa-diagram-project text-green-400"></i>
+ Arquitectura
+</h2>
+
+<div class="space-y-4">
+
+<div class="glass p-5 rounded-xl">Usuario</div>
+
+<div class="text-green-400 text-3xl">
+<i class="fa-solid fa-arrow-down"></i>
+</div>
+
+<div class="glass p-5 rounded-xl">Frontend (Vue.js)</div>
+
+<div class="text-green-400 text-3xl">
+<i class="fa-solid fa-arrow-down"></i>
+</div>
+
+<div class="glass p-5 rounded-xl">Frappe Framework</div>
+
+<div class="text-green-400 text-3xl">
+<i class="fa-solid fa-arrow-down"></i>
+</div>
+
+<div class="glass p-5 rounded-xl">ERPNext</div>
+
+<div class="text-green-400 text-3xl">
+<i class="fa-solid fa-arrow-down"></i>
+</div>
+
+<div class="glass p-5 rounded-xl">MariaDB</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SCRUM -->
+
+<section id="scrum" class="py-20 px-6">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-12">
+<i class="fa-solid fa-people-group text-green-400"></i>
+ Metodología Scrum
+</h2>
+
+<div class="grid md:grid-cols-7 gap-4 text-center">
+
+<div class="glass p-5 rounded-xl">Product Backlog</div>
+<div class="glass p-5 rounded-xl">Sprint Planning</div>
+<div class="glass p-5 rounded-xl">Sprint Backlog</div>
+<div class="glass p-5 rounded-xl">Desarrollo</div>
+<div class="glass p-5 rounded-xl">Testing</div>
+<div class="glass p-5 rounded-xl">Sprint Review</div>
+<div class="glass p-5 rounded-xl">Retrospective</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INSTALACION -->
+
+<section id="instalacion" class="py-20 px-6 bg-slate-900">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-10">
+<i class="fa-solid fa-terminal text-green-400"></i>
+ Instalación
+</h2>
+
+<div class="glass p-8 rounded-xl">
+
+<pre class="overflow-x-auto text-green-400">
+git clone https://github.com/Suarezsh/ERP-NEXT.git
+
+cd ERP-NEXT
+
+docker compose up -d
+</pre>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFICIOS -->
+
+<section class="py-20 px-6">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-12">
+<i class="fa-solid fa-chart-line text-green-400"></i>
+ Beneficios
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="glass p-6 rounded-xl">Centralización de información</div>
+<div class="glass p-6 rounded-xl">Automatización de procesos</div>
+<div class="glass p-6 rounded-xl">Reducción de errores</div>
+<div class="glass p-6 rounded-xl">Mayor productividad</div>
+<div class="glass p-6 rounded-xl">Información en tiempo real</div>
+<div class="glass p-6 rounded-xl">Escalabilidad empresarial</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-slate-950 border-t border-slate-800 py-10 text-center">
+
+<div class="max-w-5xl mx-auto">
+
+<h3 class="text-2xl font-bold mb-3">
+ERP NEXT
+</h3>
+
+<p class="text-slate-400 mb-6">
+Proyecto académico basado en ERPNext y Frappe Framework.
+</p>
+
+<div class="flex justify-center gap-6 text-xl">
+
+<a href="https://github.com/Suarezsh/ERP-NEXT">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://frappe.io/erpnext">
+<i class="fa-solid fa-globe"></i>
+</a>
+
+</div>
+
+<p class="mt-8 text-slate-500">
+© 2026 - Equipo ERP NEXT
+</p>
+
+</div>
+
+</footer>
+
+</body>
+  </html>
