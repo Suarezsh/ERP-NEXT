@@ -1,10 +1,10 @@
-# 🚀 ERP NEXT
+#  ERP NEXT
 
 Sistema ERP empresarial de código abierto implementado mediante **ERPNext** y **Frappe Framework**, diseñado para integrar y optimizar los procesos administrativos, financieros, comerciales y operativos de una organización.
 
 ---
 
-## 📋 Tabla de Contenidos
+##  Tabla de Contenidos
 
 * [Descripción del Proyecto](#-descripción-del-proyecto)
 * [Objetivos](#-objetivos)
@@ -23,7 +23,7 @@ Sistema ERP empresarial de código abierto implementado mediante **ERPNext** y *
 
 ---
 
-# 📖 Descripción del Proyecto
+#  Descripción del Proyecto
 
 ERP NEXT es una solución de planificación de recursos empresariales (ERP) basada en software libre que permite gestionar de forma centralizada los procesos más importantes de una empresa.
 
@@ -43,7 +43,7 @@ Su objetivo principal es mejorar la eficiencia operativa, reducir errores manual
 
 ---
 
-# 🎯 Objetivos
+#  Objetivos
 
 ## Objetivo General
 
@@ -61,7 +61,7 @@ Implementar una plataforma ERP basada en ERPNext para optimizar la gestión empr
 
 ---
 
-# 👥 Integrantes y Roles
+#  Integrantes y Roles
 
 | Integrante                         | Rol                |
 | ---------------------------------- | ------------------ |
@@ -134,51 +134,51 @@ Características:
 
 ---
 
-# ⚙ Funcionalidades
+#  Funcionalidades
 
-## 📊 Gestión de Clientes (CRM)
+##  Gestión de Clientes (CRM)
 
 * Registro de clientes.
 * Historial comercial.
 * Seguimiento de oportunidades.
 * Gestión de contactos.
 
-## 💰 Gestión de Ventas
+##  Gestión de Ventas
 
 * Cotizaciones.
 * Órdenes de venta.
 * Facturación.
 * Reportes comerciales.
 
-## 🛒 Gestión de Compras
+##  Gestión de Compras
 
 * Solicitudes de compra.
 * Órdenes de compra.
 * Gestión de proveedores.
 * Seguimiento de adquisiciones.
 
-## 📦 Gestión de Inventario
+##  Gestión de Inventario
 
 * Control de stock.
 * Movimientos de almacén.
 * Transferencias.
 * Alertas de inventario.
 
-## 💳 Gestión Financiera
+##  Gestión Financiera
 
 * Cuentas por cobrar.
 * Cuentas por pagar.
 * Flujo de caja.
 * Estados financieros.
 
-## 👨‍💼 Recursos Humanos
+##  Recursos Humanos
 
 * Gestión de empleados.
 * Control de asistencia.
 * Vacaciones.
 * Nóminas.
 
-## 📈 Gestión de Proyectos
+##  Gestión de Proyectos
 
 * Planificación.
 * Asignación de tareas.
@@ -187,7 +187,7 @@ Características:
 
 ---
 
-# 📦 Módulos ERP
+#  Módulos ERP
 
 | Módulo        | Descripción            |
 | ------------- | ---------------------- |
@@ -203,7 +203,7 @@ Características:
 
 ---
 
-# 🔄 Metodología Scrum
+# Metodología Scrum
 
 El proyecto fue desarrollado utilizando Scrum como marco de trabajo ágil.
 
@@ -247,7 +247,7 @@ Sprint Retrospective
 
 ---
 
-# 📁 Estructura del Proyecto
+#  Estructura del Proyecto
 
 ```text
 ERP-NEXT/
@@ -269,7 +269,7 @@ ERP-NEXT/
 
 ---
 
-# 💻 Instalación
+#  Instalación
 
 ## Clonar repositorio
 
@@ -291,7 +291,7 @@ docker compose up -d
 
 ---
 
-# ▶ Ejecución
+#  Ejecución
 
 Acceder desde:
 
@@ -301,7 +301,7 @@ http://localhost:8000
 
 ---
 
-# 📈 Beneficios
+#  Beneficios
 
 * Centralización de información.
 * Automatización de procesos.
@@ -313,7 +313,7 @@ http://localhost:8000
 
 ---
 
-# 🔮 Mejoras Futuras
+#  Mejoras Futuras
 
 * Integración con Inteligencia Artificial.
 * Dashboards analíticos avanzados.
@@ -325,7 +325,7 @@ http://localhost:8000
 
 ---
 
-# 📚 Enlaces de Referencia
+#  Enlaces de Referencia
 
 ## Repositorio
 
@@ -345,7 +345,7 @@ https://frappeframework.com/docs
 
 ---
 
-# 📄 Licencia
+#  Licencia
 
 Proyecto académico desarrollado utilizando tecnologías Open Source basadas en ERPNext y Frappe Framework.
 
