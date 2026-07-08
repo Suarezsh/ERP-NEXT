@@ -150,6 +150,28 @@ Para configurar el repositorio localmente, sigue los pasos que se mencionan a co
 
 Por favor, lee nuestra [Política de marcas registradas y logotipos](TRADEMARK_POLICY.md).
 
+# Ejecutar ERPNext con Docker (Windows)
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/frappe/frappe_docker.git
+cd frappe_docker
+
+# 2. Iniciar los contenedores
+docker compose -f pwd.yml up -d
+
+# 3. Verificar que estén en ejecución
+docker ps
+```
+
+Abrir en el navegador:
+
+```
+http://localhost:8080
+```
+
+Si Docker no está iniciado, abrir **Docker Desktop** antes de ejecutar los comandos.
+
 <br />
 <br />
 <div align="center" style="padding-top: 0.75rem;">
