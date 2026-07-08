@@ -28,19 +28,19 @@
 
 ## ERPNext
 
-100% Open-Source ERP system to help you run your business.
+Sistema ERP 100% de código abierto para ayudarte a dirigir tu negocio.
 
-### Motivation
+### Motivación
 
-Running a business is a complex task - handling invoices, tracking stock, managing personnel and even more ad-hoc activities. In a market where software is sold separately to manage each of these tasks, ERPNext does all of the above and more, for free.
+Dirigir un negocio es una tarea compleja: gestionar facturas, realizar el seguimiento del stock, administrar el personal e incluso realizar más actividades ad-hoc. En un mercado donde el software se vende por separado para gestionar cada una de estas tareas, ERPNext hace todo lo anterior y más, de forma gratuita.
 
-### Key Features
+### Características Clave
 
-- **Accounting**: All the tools you need to manage cash flow in one place, right from recording transactions to summarizing and analyzing financial reports.
-- **Order Management**: Track inventory levels, replenish stock, and manage sales orders, customers, suppliers, shipments, deliverables, and order fulfillment.
-- **Manufacturing**: Simplifies the production cycle, helps track material consumption, exhibits capacity planning, handles subcontracting, and more!
-- **Asset Management**: From purchase to perishment, IT infrastructure to equipment. Cover every branch of your organization, all in one centralized system.
-- **Projects**: Delivery both internal and external Projects on time, budget and Profitability. Track tasks, timesheets, and issues by project.
+- **Contabilidad**: Todas las herramientas que necesitas para gestionar el flujo de caja en un solo lugar, desde el registro de transacciones hasta el resumen y análisis de informes financieros.
+- **Gestión de Pedidos**: Realiza el seguimiento de los niveles de inventario, repón stock y gestiona pedidos de ventas, clientes, proveedores, envíos, entregas y cumplimiento de pedidos.
+- **Fabricación**: Simplifica el ciclo de producción, ayuda a realizar el seguimiento del consumo de materiales, muestra la planificación de la capacidad, gestiona la subcontratación ¡y más!
+- **Gestión de Activos**: Desde la compra hasta el deterioro, desde la infraestructura de TI hasta el equipamiento. Cubre cada rama de tu organización, todo en un sistema centralizado.
+- **Proyectos**: Entrega proyectos tanto internos como externos a tiempo, dentro del presupuesto y con rentabilidad. Realiza el seguimiento de tareas, hojas de horas y problemas por proyecto.
 
 <details open>
 
@@ -51,19 +51,19 @@ Running a business is a complex task - handling invoices, tracking stock, managi
 	<img src="https://erpnext.com/files/v16_tasks.png"/>
 </details>
 
-### Under the Hood
+### Under the Hood (Bajo el capó)
 
-- [**Frappe Framework**](https://github.com/frappe/frappe): A full-stack web application framework written in Python and Javascript. The framework provides a robust foundation for building web applications, including a database abstraction layer, user authentication, and a REST API.
+- [**Frappe Framework**](https://github.com/frappe/frappe): Un framework de aplicaciones web full-stack escrito en Python y Javascript. El framework proporciona una base sólida para construir aplicaciones web, incluyendo una capa de abstracción de base de datos, autenticación de usuarios y una API REST.
 
-- [**Frappe UI**](https://github.com/frappe/frappe-ui): A Vue-based UI library, to provide a modern user interface. The Frappe UI library provides a variety of components that can be used to build single-page applications on top of the Frappe Framework.
+- [**Frappe UI**](https://github.com/frappe/frappe-ui): Una biblioteca de IU basada en Vue, para proporcionar una interfaz de usuario moderna. La biblioteca Frappe UI ofrece una variedad de componentes que se pueden utilizar para construir aplicaciones de una sola página (SPA) sobre el Frappe Framework.
 
-## Production Setup
+## Production Setup (Configuración de producción)
 
-### Managed Hosting
+### Managed Hosting (Alojamiento gestionado)
 
-You can try [Frappe Cloud](https://frappecloud.com), a simple, user-friendly and sophisticated [open-source](https://github.com/frappe/press) platform to host Frappe applications with peace of mind.
+Puedes probar [Frappe Cloud](https://frappecloud.com), una plataforma de [código abierto](https://github.com/frappe/press) simple, intuitiva y sofisticada para alojar aplicaciones Frappe con total tranquilidad.
 
-It takes care of installation, setup, upgrades, monitoring, maintenance and support of your Frappe deployments. It is a fully featured developer platform with an ability to manage and control multiple Frappe deployments.
+Se encarga de la instalación, configuración, actualizaciones, monitoreo, mantenimiento y soporte de tus despliegues de Frappe. Es una plataforma de desarrollo con todas las funciones que permite gestionar y controlar múltiples despliegues de Frappe.
 
 <div>
 	<a href="https://erpnext-demo.frappe.cloud/app/home" target="_blank">
@@ -76,12 +76,12 @@ It takes care of installation, setup, upgrades, monitoring, maintenance and supp
 
 
 
-### Self-Hosted
+### Self-Hosted (Autoalojado)
 #### Docker
 
-Prerequisites: docker, docker-compose, git. Refer [Docker Documentation](https://docs.docker.com) for more details on Docker setup.
+Requisitos previos: docker, docker-compose, git. Consulta la [Documentación de Docker](https://docs.docker.com) para obtener más detalles sobre la configuración de Docker.
 
-Run following commands:
+Ejecuta los siguientes comandos:
 
 ```
 git clone https://github.com/frappe/frappe_docker
@@ -89,37 +89,37 @@ cd frappe_docker
 docker compose -f pwd.yml up -d
 ```
 
-After a couple of minutes, site should be accessible on your localhost port: 8080. Use below default login credentials to access the site.
-- Username: Administrator
-- Password: admin
+Después de un par de minutos, el sitio debería estar accesible en el puerto de tu localhost: 8080. Utiliza las siguientes credenciales de inicio de sesión predeterminadas para acceder al sitio.
+- Usuario: Administrator
+- Contraseña: admin
 
-See [Frappe Docker](https://github.com/frappe/frappe_docker?tab=readme-ov-file#to-run-on-arm64-architecture-follow-this-instructions) for ARM based docker setup.
+Consulta [Frappe Docker](https://github.com/frappe/frappe_docker?tab=readme-ov-file#to-run-on-arm64-architecture-follow-this-instructions) para la configuración de Docker basada en ARM.
 
 
-## Development Setup
-### Manual Install
+## Development Setup (Configuración de desarrollo)
+### Manual Install (Instalación manual)
 
-The Easy Way: our install script for bench will install all dependencies (e.g. MariaDB). See https://github.com/frappe/bench for more details.
+La forma fácil: nuestro script de instalación para bench instalará todas las dependencias (por ejemplo, MariaDB). Consulta https://github.com/frappe/bench para más detalles.
 
-New passwords will be created for the ERPNext "Administrator" user, the MariaDB root user, and the frappe user (the script displays the passwords and saves them to ~/frappe_passwords.txt).
+Se crearán nuevas contraseñas para el usuario "Administrator" de ERPNext, el usuario root de MariaDB y el usuario frappe (el script muestra las contraseñas y las guarda en ~/frappe_passwords.txt).
 
 
 ### Local
 
-To setup the repository locally follow the steps mentioned below:
+Para configurar el repositorio localmente, sigue los pasos que se mencionan a continuación:
 
-1. Setup bench by following the [Installation Steps](https://frappeframework.com/docs/user/en/installation) and start the server
+1. Configura bench siguiendo los [Pasos de instalación](https://frappeframework.com/docs/user/en/installation) e inicia el servidor
    ```
    bench start
    ```
 
-2. In a separate terminal window, run the following commands:
+2. En una ventana de terminal separada, ejecuta los siguientes comandos:
    ```
    # Create a new site
    bench new-site erpnext.localhost
    ```
 
-3. Get the ERPNext app and install it
+3. Obtén la aplicación ERPNext e instálala
    ```
    # Get the ERPNext app
    bench get-app https://github.com/frappe/erpnext
@@ -128,27 +128,27 @@ To setup the repository locally follow the steps mentioned below:
    bench --site erpnext.localhost install-app erpnext
    ```
 
-4. Open the URL `http://erpnext.localhost:8000/app` in your browser, you should see the app running
+4. Abre la URL `http://erpnext.localhost:8000/app` en tu navegador, deberías ver la aplicación ejecutándose.
 
-## Learning and community
+## Learning and community (Aprendizaje y comunidad)
 
-1. [Frappe School](https://school.frappe.io) - Learn Frappe Framework and ERPNext from the various courses by the maintainers or from the community.
-2. [Official documentation](https://docs.erpnext.com/) - Extensive documentation for ERPNext.
-3. [Discussion Forum](https://discuss.frappe.io/c/erpnext/6) - Engage with community of ERPNext users and service providers.
-4. [Telegram Group](https://erpnext_public.t.me) - Get instant help from huge community of users.
-
-
-## Contributing
-
-1. [Issue Guidelines](https://github.com/frappe/erpnext/wiki/Issue-Guidelines)
-1. [Report Security Vulnerabilities](https://erpnext.com/security)
-1. [Pull Request Requirements](https://github.com/frappe/erpnext/wiki/Contribution-Guidelines)
-2. [Translations](https://crowdin.com/project/frappe)
+1. [Frappe School](https://school.frappe.io) - Aprende Frappe Framework y ERPNext con los diversos cursos de los mantenedores o de la comunidad.
+2. [Official documentation](https://docs.erpnext.com/) - Documentación extensa para ERPNext.
+3. [Discussion Forum](https://discuss.frappe.io/c/erpnext/6) - Participa con la comunidad de usuarios y proveedores de servicios de ERPNext.
+4. [Telegram Group](https://erpnext_public.t.me) - Obtén ayuda instantánea de una enorme comunidad de usuarios.
 
 
-## Logo and Trademark Policy
+## Contributing (Contribuir)
 
-Please read our [Logo and Trademark Policy](TRADEMARK_POLICY.md).
+1. [Issue Guidelines](https://github.com/frappe/erpnext/wiki/Issue-Guidelines) (Directrices para reportar problemas)
+1. [Report Security Vulnerabilities](https://erpnext.com/security) (Reportar vulnerabilidades de seguridad)
+1. [Pull Request Requirements](https://github.com/frappe/erpnext/wiki/Contribution-Guidelines) (Requisitos para Pull Requests)
+2. [Translations](https://crowdin.com/project/frappe) (Traducciones)
+
+
+## Logo and Trademark Policy (Política de marcas registradas y logotipos)
+
+Por favor, lee nuestra [Política de marcas registradas y logotipos](TRADEMARK_POLICY.md).
 
 <br />
 <br />
