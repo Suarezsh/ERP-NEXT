@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:PRD-PRED-{item}-{prediction_date}-{###}",
+ "creation": "2026-07-10 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "product_section",
+  "item",
+  "item_name",
+  "prediction_run",
+  "column_break_1",
+  "prediction_date",
+  "warehouse",
+  "prediction_section",
+  "predicted_quantity",
+  "confidence_score",
+  "actual_quantity",
+  "column_break_2",
+  "stockout_date",
+  "suggested_purchase_quantity",
+  "current_stock"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_section",
+   "fieldtype": "Section Break",
+   "label": "Product"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prediction_run",
+   "fieldtype": "Link",
+   "label": "Prediction Run",
+   "options": "Prediction Run"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prediction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Prediction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "prediction_section",
+   "fieldtype": "Section Break",
+   "label": "Prediction Results"
+  },
+  {
+   "fieldname": "predicted_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Predicted Quantity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "confidence_score",
+   "fieldtype": "Percent",
+   "label": "Confidence Score"
+  },
+  {
+   "fieldname": "actual_quantity",
+   "fieldtype": "Float",
+   "label": "Actual Quantity",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stockout_date",
+   "fieldtype": "Date",
+   "label": "Estimated Stockout Date"
+  },
+  {
+   "fieldname": "suggested_purchase_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Suggested Purchase Quantity",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "current_stock",
+   "fieldtype": "Float",
+   "label": "Current Stock",
+   "non_negative": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-line-chart",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-10 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Predictive Analytics",
+ "name": "Product Prediction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "write": 0
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 0,
+   "role": "Sales User",
+   "share": 0,
+   "write": 0
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "item_name",
+ "track_changes": 1
+}
