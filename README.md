@@ -172,6 +172,19 @@ http://localhost:8080
 
 Si Docker no está iniciado, abrir **Docker Desktop** antes de ejecutar los comandos.
 
+---
+
+## Módulo de Análisis Predictivo
+
+Este fork incluye un módulo adicional de **Análisis Predictivo con IA** que permite:
+
+- Pronosticar ventas por producto usando **Random Forest** o regresión lineal.
+- Detectar posibles quiebres de stock.
+- Sugerir cantidades de compra óptimas.
+- Ejecutar predicciones de forma automática todos los días.
+
+Para más detalles, revisa la documentación en `erpnext/predictive_analytics/README.md`.
+
 <br />
 <br />
 <div align="center" style="padding-top: 0.75rem;">
