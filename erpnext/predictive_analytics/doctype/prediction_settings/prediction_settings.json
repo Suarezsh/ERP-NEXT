@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "creation": "2026-07-10 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "enable_predictions",
+  "model_type",
+  "column_break_1",
+  "default_prediction_days",
+  "minimum_history_days",
+  "stock_section",
+  "safety_stock_days",
+  "default_warehouse"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General Settings"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_predictions",
+   "fieldtype": "Check",
+   "label": "Enable Predictions"
+  },
+  {
+   "default": "Random Forest",
+   "fieldname": "model_type",
+   "fieldtype": "Select",
+   "label": "Prediction Model",
+   "options": "Random Forest\nLinear Regression",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "30",
+   "description": "Number of future days to predict",
+   "fieldname": "default_prediction_days",
+   "fieldtype": "Int",
+   "label": "Default Prediction Days",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "default": "60",
+   "description": "Minimum days of sales history required to train the model",
+   "fieldname": "minimum_history_days",
+   "fieldtype": "Int",
+   "label": "Minimum History Days",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "stock_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Settings"
+  },
+  {
+   "default": "7",
+   "description": "Extra days of stock to include in purchase suggestion",
+   "fieldname": "safety_stock_days",
+   "fieldtype": "Int",
+   "label": "Safety Stock Days",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-07-10 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Predictive Analytics",
+ "name": "Prediction Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
