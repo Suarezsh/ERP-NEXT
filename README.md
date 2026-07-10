@@ -183,7 +183,14 @@ Este fork incluye un módulo adicional de **Análisis Predictivo con IA** que pe
 - Sugerir cantidades de compra óptimas.
 - Ejecutar predicciones de forma automática todos los días.
 
-Para más detalles, revisa la documentación en `erpnext/predictive_analytics/README.md`.
+### Cómo usarlo
+
+1. Crea facturas de venta históricas para los productos que deseas predecir.
+2. Ve a **Predictive Analytics > Configuración de Predicciones** y activa el módulo.
+3. Crea una **Ejecución de Predicción** y presiona **Generar Predicciones**.
+4. Revisa los resultados en **Predictive Analytics > Predicciones por Producto**.
+
+Para más detalles sobre el despliegue en Docker y uso avanzado, revisa `erpnext/predictive_analytics/README.md`.
 
 <br />
 <br />
