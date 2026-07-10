@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:RUN-{YYYY}-{MM}-{DD}-{###}",
+ "creation": "2026-07-10 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "run_details_section",
+  "run_date",
+  "status",
+  "column_break_1",
+  "prediction_period_days",
+  "model_used",
+  "history_section",
+  "from_date",
+  "to_date",
+  "column_break_2",
+  "total_products",
+  "processed_products",
+  "log_section",
+  "error_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "run_details_section",
+   "fieldtype": "Section Break",
+   "label": "Run Details"
+  },
+  {
+   "default": "Now",
+   "fieldname": "run_date",
+   "fieldtype": "Datetime",
+   "label": "Run Date",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nRunning\nCompleted\nFailed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prediction_period_days",
+   "fieldtype": "Int",
+   "label": "Prediction Period Days",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "model_used",
+   "fieldtype": "Data",
+   "label": "Model Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "history_section",
+   "fieldtype": "Section Break",
+   "label": "History Range"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_products",
+   "fieldtype": "Int",
+   "label": "Total Products",
+   "read_only": 1
+  },
+  {
+   "fieldname": "processed_products",
+   "fieldtype": "Int",
+   "label": "Processed Products",
+   "read_only": 1
+  },
+  {
+   "fieldname": "log_section",
+   "fieldtype": "Section Break",
+   "label": "Log"
+  },
+  {
+   "fieldname": "error_log",
+   "fieldtype": "Text",
+   "label": "Error Log",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-cogs",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 0,
+ "links": [
+  {
+   "group": "Predictions",
+   "link_doctype": "Product Prediction",
+   "link_fieldname": "prediction_run"
+  }
+ ],
+ "modified": "2026-07-10 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Predictive Analytics",
+ "name": "Prediction Run",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
