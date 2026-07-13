@@ -19,3 +19,8 @@ node_modules/
 .backportrc.json
 # Aider AI Chat
 .aider*
+
+# Archivos y carpetas del proyecto local que no deben subirse
+/*.txt
+/informe/
+

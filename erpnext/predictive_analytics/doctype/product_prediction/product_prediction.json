@@ -21,7 +21,9 @@
   "column_break_2",
   "stockout_date",
   "suggested_purchase_quantity",
-  "current_stock"
+  "current_stock",
+  "daily_predictions_section",
+  "daily_predictions"
  ],
  "fields": [
   {
@@ -115,6 +117,17 @@
    "label": "Current Stock",
    "non_negative": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "daily_predictions_section",
+   "fieldtype": "Section Break",
+   "label": "Daily Predictions"
+  },
+  {
+   "fieldname": "daily_predictions",
+   "fieldtype": "Table",
+   "label": "Daily Predictions",
+   "options": "Prediction Day"
   }
  ],
  "icon": "fa fa-line-chart",

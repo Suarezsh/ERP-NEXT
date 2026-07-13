@@ -293,6 +293,14 @@ def generate_predictions(prediction_run_name: str | None = None) -> dict:
 			prediction.current_stock = result["current_stock"]
 			prediction.stockout_date = result["stockout_date"]
 			prediction.suggested_purchase_quantity = result["suggested_purchase_quantity"]
+
+			# Store daily breakdown.
+			for day in result.get("predicted_daily", []):
+				prediction.append("daily_predictions", {
+					"date": day["date"],
+					"predicted_quantity": day["predicted_quantity"],
+				})
+
 			prediction.insert(ignore_permissions=True)
 
 		except Exception as e:
