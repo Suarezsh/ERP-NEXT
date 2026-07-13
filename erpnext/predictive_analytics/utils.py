@@ -62,11 +62,17 @@ def get_sales_history(item_code: str, from_date: date | None = None, to_date: da
 
 def get_item_stock(item_code: str, warehouse: str | None = None) -> float:
 	"""Return current stock quantity for an item."""
-	filters = {"item_code": item_code, "is_cancelled": 0}
-	if warehouse:
-		filters["warehouse"] = warehouse
+	conditions = ["item_code = %s"]
+	values = [item_code]
 
-	qty = frappe.db.get_value("Bin", filters, "sum(actual_qty)")
+	if warehouse:
+		conditions.append("warehouse = %s")
+		values.append(warehouse)
+
+	qty = frappe.db.sql(
+		f"""SELECT SUM(actual_qty) FROM `tabBin` WHERE {' AND '.join(conditions)}""",
+		tuple(values),
+	)[0][0]
 	return flt(qty)
 
 
