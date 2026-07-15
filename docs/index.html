@@ -1,509 +1,437 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ERP NEXT | Sistema ERP Empresarial</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<style>
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-.glass{
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,.1);
-}
-
-.fade{
-animation:fadeUp 1s ease;
-}
-
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-.card:hover{
-transform:translateY(-8px);
-transition:.3s;
-}
-
-.hero{
-background:
-linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.95)),
-url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2000');
-background-size:cover;
-background-position:center;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe: Módulo de Análisis Predictivo con IA en ERPNext</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-
-<!-- NAVBAR -->
-
-<nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur border-b border-slate-700">
-<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-<div class="flex items-center gap-3">
-<i class="fa-solid fa-cubes text-green-400 text-2xl"></i>
-<h1 class="font-bold text-xl">ERP NEXT</h1>
-</div>
-
-<div class="hidden md:flex gap-6 text-sm">
-<a href="#descripcion" class="hover:text-green-400">Descripción</a>
-<a href="#objetivos" class="hover:text-green-400">Objetivos</a>
-<a href="#tecnologias" class="hover:text-green-400">Tecnologías</a>
-<a href="#modulos" class="hover:text-green-400">Módulos</a>
-<a href="#scrum" class="hover:text-green-400">Scrum</a>
-<a href="#instalacion" class="hover:text-green-400">Instalación</a>
-</div>
-
-</div>
-</nav>
-
-<!-- HERO -->
-
-<section class="hero min-h-screen flex items-center justify-center text-center px-6">
-
-<div class="fade max-w-5xl">
-
-<div class="mb-6">
-<i class="fa-solid fa-building-columns text-green-400 text-7xl"></i>
-</div>
-
-<h1 class="text-6xl font-extrabold mb-6">
-ERP NEXT
-</h1>
-
-<p class="text-xl text-slate-300 max-w-3xl mx-auto mb-10">
-Sistema ERP empresarial de código abierto implementado mediante ERPNext y Frappe Framework,
-diseñado para integrar y optimizar procesos administrativos, financieros,
-comerciales y operativos.
-</p>
-
-<div class="flex flex-wrap justify-center gap-4">
-
-<a href="#descripcion"
-class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg font-semibold">
-Explorar Proyecto
-</a>
-
-<a href="https://github.com/Suarezsh/ERP-NEXT"
-class="border border-slate-500 px-8 py-4 rounded-lg hover:bg-slate-800">
-Repositorio GitHub
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- DASHBOARD -->
-
-<section class="py-20 px-6">
-
-<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6">
-
-<div class="glass p-6 rounded-xl text-center">
-<h3 class="text-4xl font-bold text-green-400">9</h3>
-<p>Módulos ERP</p>
-</div>
-
-<div class="glass p-6 rounded-xl text-center">
-<h3 class="text-4xl font-bold text-green-400">16</h3>
-<p>Versión ERPNext</p>
-</div>
-
-<div class="glass p-6 rounded-xl text-center">
-<h3 class="text-4xl font-bold text-green-400">5</h3>
-<p>Integrantes</p>
-</div>
-
-<div class="glass p-6 rounded-xl text-center">
-<h3 class="text-4xl font-bold text-green-400">100%</h3>
-<p>Open Source</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- DESCRIPCION -->
-
-<section id="descripcion" class="py-20 px-6">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold mb-10">
-<i class="fa-solid fa-circle-info text-green-400"></i>
- Descripción del Proyecto
-</h2>
-
-<div class="glass p-8 rounded-xl">
-
-<p class="text-slate-300 leading-8">
-ERP NEXT es una solución ERP basada en software libre que permite gestionar
-de forma centralizada clientes, ventas, compras, inventarios, finanzas,
-recursos humanos, proyectos y producción.
-Su objetivo es mejorar la eficiencia operativa, reducir errores manuales
-y proporcionar información en tiempo real para la toma de decisiones.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- OBJETIVOS -->
-
-<section id="objetivos" class="py-20 px-6 bg-slate-900">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold mb-10">
-<i class="fa-solid fa-bullseye text-green-400"></i>
- Objetivos
-</h2>
-
-<div class="grid md:grid-cols-2 gap-6">
-
-<div class="glass p-6 rounded-xl">
-<h3 class="font-bold text-xl mb-4">Objetivo General</h3>
-<p>
-Implementar una plataforma ERP basada en ERPNext para optimizar
-la gestión empresarial mediante la integración de procesos.
-</p>
-</div>
-
-<div class="glass p-6 rounded-xl">
-<h3 class="font-bold text-xl mb-4">Objetivos Específicos</h3>
-
-<ul class="space-y-2">
-<li>✔ Centralizar información empresarial</li>
-<li>✔ Automatizar procesos administrativos</li>
-<li>✔ Optimizar ventas y compras</li>
-<li>✔ Mejorar inventarios</li>
-<li>✔ Gestionar finanzas</li>
-<li>✔ Incrementar productividad</li>
-<li>✔ Aplicar Scrum</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- INTEGRANTES -->
-
-<section class="py-20 px-6">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold mb-10">
-<i class="fa-solid fa-users text-green-400"></i>
- Integrantes y Roles
-</h2>
-
-<div class="overflow-x-auto">
-
-<table class="w-full glass rounded-xl overflow-hidden">
-
-<thead class="bg-green-600">
-<tr>
-<th class="p-4 text-left">Integrante</th>
-<th class="p-4 text-left">Rol</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr class="border-b border-slate-700">
-<td class="p-4">Fernandez Lastarria, Valerio Piero</td>
-<td class="p-4">Scrum Master 1</td>
-</tr>
-
-<tr class="border-b border-slate-700">
-<td class="p-4">Suarez Huamani, Marco Antonio</td>
-<td class="p-4">Scrum Master 2</td>
-</tr>
-
-<tr class="border-b border-slate-700">
-<td class="p-4">Condori Catunta, Joselin Sharon</td>
-<td class="p-4">Backend Developer</td>
-</tr>
-
-<tr class="border-b border-slate-700">
-<td class="p-4">Rojas Condori, Fabiana Paola</td>
-<td class="p-4">Frontend Developer</td>
-</tr>
-
-<tr>
-<td class="p-4">Velazque Quispe, Flor De Liz</td>
-<td class="p-4">QA & Testing</td>
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- TECNOLOGIAS -->
-
-<section id="tecnologias" class="py-20 px-6 bg-slate-900">
-
-<div class="max-w-7xl mx-auto">
-
-<h2 class="text-4xl font-bold mb-12">
-<i class="fa-solid fa-microchip text-green-400"></i>
- Tecnologías Utilizadas
-</h2>
-
-<div class="grid md:grid-cols-4 gap-6">
-
-<div class="glass p-6 rounded-xl card">
-<i class="fa-brands fa-python text-4xl text-green-400"></i>
-<h3 class="mt-4 font-bold">Backend</h3>
-<p>Python<br>Frappe v16<br>ERPNext v16</p>
-</div>
-
-<div class="glass p-6 rounded-xl card">
-<i class="fa-brands fa-vuejs text-4xl text-green-400"></i>
-<h3 class="mt-4 font-bold">Frontend</h3>
-<p>Vue.js<br>HTML5<br>CSS3<br>JavaScript</p>
-</div>
-
-<div class="glass p-6 rounded-xl card">
-<i class="fa-solid fa-database text-4xl text-green-400"></i>
-<h3 class="mt-4 font-bold">Base de Datos</h3>
-<p>MariaDB</p>
-</div>
-
-<div class="glass p-6 rounded-xl card">
-<i class="fa-brands fa-docker text-4xl text-green-400"></i>
-<h3 class="mt-4 font-bold">DevOps</h3>
-<p>Docker<br>Docker Compose<br>GitHub Actions</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- MODULOS -->
-
-<section id="modulos" class="py-20 px-6">
-
-<div class="max-w-7xl mx-auto">
-
-<h2 class="text-4xl font-bold mb-12">
-<i class="fa-solid fa-layer-group text-green-400"></i>
- Módulos ERP
-</h2>
-
-<div class="grid md:grid-cols-3 gap-6">
-
-<div class="glass p-6 rounded-xl card">CRM</div>
-<div class="glass p-6 rounded-xl card">Sales</div>
-<div class="glass p-6 rounded-xl card">Buying</div>
-<div class="glass p-6 rounded-xl card">Stock</div>
-<div class="glass p-6 rounded-xl card">Accounts</div>
-<div class="glass p-6 rounded-xl card">HR</div>
-<div class="glass p-6 rounded-xl card">Projects</div>
-<div class="glass p-6 rounded-xl card">Manufacturing</div>
-<div class="glass p-6 rounded-xl card">Reports</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ARQUITECTURA -->
-
-<section class="py-20 px-6 bg-slate-900">
-
-<div class="max-w-4xl mx-auto text-center">
-
-<h2 class="text-4xl font-bold mb-12">
-<i class="fa-solid fa-diagram-project text-green-400"></i>
- Arquitectura
-</h2>
-
-<div class="space-y-4">
-
-<div class="glass p-5 rounded-xl">Usuario</div>
-
-<div class="text-green-400 text-3xl">
-<i class="fa-solid fa-arrow-down"></i>
-</div>
-
-<div class="glass p-5 rounded-xl">Frontend (Vue.js)</div>
-
-<div class="text-green-400 text-3xl">
-<i class="fa-solid fa-arrow-down"></i>
-</div>
-
-<div class="glass p-5 rounded-xl">Frappe Framework</div>
-
-<div class="text-green-400 text-3xl">
-<i class="fa-solid fa-arrow-down"></i>
-</div>
-
-<div class="glass p-5 rounded-xl">ERPNext</div>
-
-<div class="text-green-400 text-3xl">
-<i class="fa-solid fa-arrow-down"></i>
-</div>
-
-<div class="glass p-5 rounded-xl">MariaDB</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SCRUM -->
-
-<section id="scrum" class="py-20 px-6">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold mb-12">
-<i class="fa-solid fa-people-group text-green-400"></i>
- Metodología Scrum
-</h2>
-
-<div class="grid md:grid-cols-7 gap-4 text-center">
-
-<div class="glass p-5 rounded-xl">Product Backlog</div>
-<div class="glass p-5 rounded-xl">Sprint Planning</div>
-<div class="glass p-5 rounded-xl">Sprint Backlog</div>
-<div class="glass p-5 rounded-xl">Desarrollo</div>
-<div class="glass p-5 rounded-xl">Testing</div>
-<div class="glass p-5 rounded-xl">Sprint Review</div>
-<div class="glass p-5 rounded-xl">Retrospective</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- INSTALACION -->
-
-<section id="instalacion" class="py-20 px-6 bg-slate-900">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold mb-10">
-<i class="fa-solid fa-terminal text-green-400"></i>
- Instalación
-</h2>
-
-<div class="glass p-8 rounded-xl">
-
-<pre class="overflow-x-auto text-green-400">
-git clone https://github.com/Suarezsh/ERP-NEXT.git
-
-cd ERP-NEXT
-
-docker compose up -d
-</pre>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- BENEFICIOS -->
-
-<section class="py-20 px-6">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold mb-12">
-<i class="fa-solid fa-chart-line text-green-400"></i>
- Beneficios
-</h2>
-
-<div class="grid md:grid-cols-3 gap-6">
-
-<div class="glass p-6 rounded-xl">Centralización de información</div>
-<div class="glass p-6 rounded-xl">Automatización de procesos</div>
-<div class="glass p-6 rounded-xl">Reducción de errores</div>
-<div class="glass p-6 rounded-xl">Mayor productividad</div>
-<div class="glass p-6 rounded-xl">Información en tiempo real</div>
-<div class="glass p-6 rounded-xl">Escalabilidad empresarial</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer class="bg-slate-950 border-t border-slate-800 py-10 text-center">
-
-<div class="max-w-5xl mx-auto">
-
-<h3 class="text-2xl font-bold mb-3">
-ERP NEXT
-</h3>
-
-<p class="text-slate-400 mb-6">
-Proyecto académico basado en ERPNext y Frappe Framework.
-</p>
-
-<div class="flex justify-center gap-6 text-xl">
-
-<a href="https://github.com/Suarezsh/ERP-NEXT">
-<i class="fab fa-github"></i>
-</a>
-
-<a href="https://frappe.io/erpnext">
-<i class="fa-solid fa-globe"></i>
-</a>
-
-</div>
-
-<p class="mt-8 text-slate-500">
-© 2026 - Equipo ERP NEXT
-</p>
-
-</div>
-
-</footer>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Top Navigation Banner -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-brain text-indigo-600 text-2xl"></i>
+                <span class="font-bold text-lg tracking-tight text-slate-900">UNSA - Ingeniería de Sistemas</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#resumen" class="hover:text-indigo-600 transition">Resumen</a>
+                <a href="#introduccion" class="hover:text-indigo-600 transition">Introducción</a>
+                <a href="#marco-teorico" class="hover:text-indigo-600 transition">Marco Teórico</a>
+                <a href="#desarrollo" class="hover:text-indigo-600 transition">Desarrollo</a>
+                <a href="#docker" class="hover:text-indigo-600 transition">Docker</a>
+                <a href="#resultados" class="hover:text-indigo-600 transition">Resultados</a>
+                <a href="#conclusiones" class="hover:text-indigo-600 transition">Conclusiones</a>
+            </nav>
+            <div>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200">
+                    <i class="fa-solid fa-calendar-days mr-1.5"></i> 2026
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        
+        <!-- Sidebar Navigation (Table of Contents) -->
+        <aside class="hidden lg:block lg:col-span-1 space-y-4 sticky top-24 self-start">
+            <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-xs">
+                <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Índice del Informe</h3>
+                <ul class="space-y-2.5 text-sm font-medium text-slate-600">
+                    <li><a href="#resumen" class="flex items-center space-x-2 py-1.5 px-2 rounded-md hover:bg-slate-50 hover:text-indigo-600 transition"><i class="fa-solid fa-list-check w-5 text-slate-400"></i><span>Resumen</span></a></li>
+                    <li><a href="#introduccion" class="flex items-center space-x-2 py-1.5 px-2 rounded-md hover:bg-slate-50 hover:text-indigo-600 transition"><i class="fa-solid fa-circle-info w-5 text-slate-400"></i><span>1. Introducción</span></a></li>
+                    <li><a href="#marco-teorico" class="flex items-center space-x-2 py-1.5 px-2 rounded-md hover:bg-slate-50 hover:text-indigo-600 transition"><i class="fa-solid fa-book w-5 text-slate-400"></i><span>2. Marco Teórico</span></a></li>
+                    <li><a href="#desarrollo" class="flex items-center space-x-2 py-1.5 px-2 rounded-md hover:bg-slate-50 hover:text-indigo-600 transition"><i class="fa-solid fa-gears w-5 text-slate-400"></i><span>3. Desarrollo de la Mejora</span></a></li>
+                    <li><a href="#docker" class="flex items-center space-x-2 py-1.5 px-2 rounded-md hover:bg-slate-50 hover:text-indigo-600 transition"><i class="fa-brands fa-docker w-5 text-slate-400"></i><span>4. Despliegue en Docker</span></a></li>
+                    <li><a href="#resultados" class="flex items-center space-x-2 py-1.5 px-2 rounded-md hover:bg-slate-50 hover:text-indigo-600 transition"><i class="fa-solid fa-chart-line w-5 text-slate-400"></i><span>5. Pruebas y Resultados</span></a></li>
+                    <li><a href="#conclusiones" class="flex items-center space-x-2 py-1.5 px-2 rounded-md hover:bg-slate-50 hover:text-indigo-600 transition"><i class="fa-solid fa-flag w-5 text-slate-400"></i><span>6. Conclusiones y Rec.</span></a></li>
+                </ul>
+            </div>
+            
+            <!-- Metadata Card -->
+            <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-xl p-5 shadow-sm space-y-4">
+                <div class="text-xs uppercase tracking-wider text-indigo-200 font-semibold">Proyecto Académico</div>
+                <div>
+                    <div class="text-xs text-slate-300">Curso:</div>
+                    <div class="text-sm font-medium">Ingeniería y Procesos de Software</div>
+                </div>
+                <div>
+                    <div class="text-xs text-slate-300">Docente:</div>
+                    <div class="text-sm font-medium">Ing. Ramirez Valdez Oscar Alberto</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Content Area -->
+        <section class="col-span-1 lg:col-span-3 space-y-12">
+            
+            <!-- Hero / Cover Section -->
+            <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-xs text-center relative overflow-hidden">
+                <div class="absolute inset-0 bg-radial from-indigo-50/50 to-transparent pointer-events-none"></div>
+                <div class="relative z-10 space-y-6">
+                    <div class="flex justify-center mb-4">
+                        <div class="p-4 bg-red-50 rounded-full border border-red-100 shadow-xs">
+                            <!-- Shield/University Icon placeholder -->
+                            <i class="fa-solid fa-graduation-cap text-red-600 text-4xl"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <h2 class="text-xs font-bold tracking-widest text-slate-400 uppercase">Universidad Nacional de San Agustín</h2>
+                        <h3 class="text-sm font-semibold text-slate-600 uppercase">Facultad de Producción y Servicios</h3>
+                        <h4 class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">Escuela Profesional de Ingeniería de Sistemas</h4>
+                    </div>
+                    
+                    <hr class="w-16 mx-auto border-t-2 border-indigo-500 my-4">
+                    
+                    <h1 class="text-2xl sm:text-4xl font-black text-slate-900 leading-tight tracking-tight max-w-2xl mx-auto">
+                        Módulo de Análisis Predictivo con Inteligencia Artificial en ERPNext
+                    </h1>
+                    
+                    <div class="pt-6 max-w-md mx-auto">
+                        <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 text-left px-2">Integrantes del Equipo</h5>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-left text-sm text-slate-700 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <div class="flex items-center space-x-2"><i class="fa-solid fa-user text-slate-400 text-xs"></i><span>Condori Catunta, J. Sharon</span></div>
+                            <div class="flex items-center space-x-2"><i class="fa-solid fa-user text-slate-400 text-xs"></i><span>Fernandez Lastarria, V. Piero</span></div>
+                            <div class="flex items-center space-x-2"><i class="fa-solid fa-user text-slate-400 text-xs"></i><span>Rojas Condori, Fabiana Paola</span></div>
+                            <div class="flex items-center space-x-2"><i class="fa-solid fa-user text-slate-400 text-xs"></i><span>Suarez Huamani, Marco A.</span></div>
+                            <div class="flex items-center space-x-2 sm:col-span-2"><i class="fa-solid fa-user text-slate-400 text-xs"></i><span>Velazque Quispe, Flor de Liz</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resumen -->
+            <div id="resumen" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-4 scroll-mt-20">
+                <div class="flex items-center space-x-3 border-b border-slate-100 pb-3">
+                    <div class="p-2 bg-indigo-50 rounded-lg text-indigo-600"><i class="fa-solid fa-list-check"></i></div>
+                    <h2 class="text-xl font-bold text-slate-900">Resumen</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed text-justify text-sm sm:text-base">
+                    El presente informe documenta el desarrollo e implementación de una mejora sobre el sistema ERPNext, consistente en un módulo de análisis predictivo con inteligencia artificial. El módulo permite pronosticar la demanda futura de productos, detectar posibles quiebres de stock y sugerir cantidades óptimas de compra, integrándose con los módulos nativos de ventas, almacén y compras de ERPNext.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-justify text-sm sm:text-base">
+                    La solución fue desarrollada como una extensión del aplicativo ERPNext, utilizando el framework Frappe, Python y librerías de machine learning como <span class="font-semibold text-slate-800">scikit-learn, pandas y numpy</span>. Se implementaron cuatro DocTypes principales: Configuración de Predicciones, Ejecución de Predicción, Predicción de Producto y Predicción Diaria. Además, se crearon un workspace exclusivo, un reporte de precisión y una tarea programada para ejecución diaria automática.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-justify text-sm sm:text-base">
+                    El despliegue se realizó mediante Docker Compose, logrando que el módulo esté disponible en la interfaz del Desk de ERPNext. Se incluyeron datos de prueba peruanos reales: una empresa, 30 productos tecnológicos, 15 clientes, 5 proveedores y 443 facturas de venta, lo que permitió validar el funcionamiento del predictor con información concreta.
+                </p>
+                <div class="pt-2">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Palabras clave:</span>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-medium text-slate-600">ERPNext</span>
+                        <span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-medium text-slate-600">Frappe</span>
+                        <span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-medium text-slate-600">Inteligencia Artificial</span>
+                        <span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-medium text-slate-600">Machine Learning</span>
+                        <span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-medium text-slate-600">Random Forest</span>
+                        <span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-medium text-slate-600">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1. Introducción -->
+            <div id="introduccion" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6 scroll-mt-20">
+                <div class="flex items-center space-x-3 border-b border-slate-100 pb-3">
+                    <div class="p-2 bg-indigo-50 rounded-lg text-indigo-600"><i class="fa-solid fa-circle-info"></i></div>
+                    <h2 class="text-xl font-bold text-slate-900">1. Introducción</h2>
+                </div>
+                
+                <div class="space-y-3">
+                    <h3 class="text-base font-bold text-slate-800 flex items-center"><i class="fa-solid fa-triangle-exclamation mr-2 text-amber-500 text-sm"></i>1.1. Planteamiento del problema</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed text-justify">
+                        Las pequeñas y medianas empresas que gestionan inventarios enfrentan constantemente el desafío de equilibrar el stock disponible con la demanda esperada. El exceso de inventario genera costos de almacenamiento elevados y riesgo de obsolescencia, mientras que la falta de stock implica pérdida de ventas y clientes insatisfechos. ERPNext carece de forma nativa de un mecanismo predictivo con IA para solventar esto de manera inteligente.
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <h3 class="text-base font-bold text-slate-800 flex items-center"><i class="fa-solid fa-square-check mr-2 text-emerald-500 text-sm"></i>1.2. Justificación</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed text-justify">
+                        Al aplicar modelos de machine learning sobre el historial de ventas, es posible estimar de forma certera la demanda futura y reducir quiebres de stock:
+                    </p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-indigo-500 mt-1 mr-2 text-xs"></i><span>Anticipar demanda en períodos futuros.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-indigo-500 mt-1 mr-2 text-xs"></i><span>Estimar la fecha exacta de agotamiento de stock.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-indigo-500 mt-1 mr-2 text-xs"></i><span>Sugerir compras óptimas basadas en seguridad.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-indigo-500 mt-1 mr-2 text-xs"></i><span>Eliminar decisiones basadas puramente en intuición.</span></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-base font-bold text-slate-800 flex items-center"><i class="fa-solid fa-bullseye mr-2 text-indigo-500 text-sm"></i>1.3. Objetivos</h3>
+                    <div class="pl-4 border-l-2 border-slate-200 space-y-2">
+                        <p class="text-sm font-semibold text-slate-700">Objetivo General:</p>
+                        <p class="text-slate-600 text-sm bg-indigo-50/50 p-2.5 rounded-lg border border-indigo-100">Desarrollar e integrar un módulo de análisis predictivo con inteligencia artificial en ERPNext para pronosticar ventas, detectar quiebres de stock y sugerir compras óptimas.</p>
+                        
+                        <p class="text-sm font-semibold text-slate-700 pt-2">Objetivos Específicos:</p>
+                        <ol class="list-decimal pl-5 text-sm text-slate-600 space-y-1">
+                            <li>Implementar un motor de predicción con Random Forest y regresión lineal.</li>
+                            <li>Crear los DocTypes requeridos para el almacenamiento de datos.</li>
+                            <li>Diseñar un workspace y reporte dinámico de precisión.</li>
+                            <li>Desplegar en un entorno funcional y reproducible de Docker.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Scrum Management Section -->
+                <div class="pt-4 space-y-4">
+                    <h3 class="text-sm font-bold uppercase text-slate-400 tracking-wider">Gestión del Equipo (Scrum)</h3>
+                    <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                        <table class="min-w-full divide-y divide-slate-200 text-sm">
+                            <thead class="bg-slate-50">
+                                <tr>
+                                    <th class="px-4 py-2.5 text-left font-semibold text-slate-700">Apellidos y Nombres</th>
+                                    <th class="px-4 py-2.5 text-left font-semibold text-slate-700">Rol Scrum</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 bg-white text-slate-600">
+                                <tr><td class="px-4 py-2">Fernandez Lastarria, Valerio Piero</td><td class="px-4 py-2"><span class="px-2 py-0.5 bg-purple-50 text-purple-700 rounded-full text-xs font-semibold">Scrum Master</span></td></tr>
+                                <tr><td class="px-4 py-2">Condori Catunta, Joselin Sharon</td><td class="px-4 py-2"><span class="px-2 py-0.5 bg-pink-50 text-pink-700 rounded-full text-xs font-semibold">Product Owner</span></td></tr>
+                                <tr><td class="px-4 py-2">Suarez Huamani, Marco Antonio</td><td class="px-4 py-2"><span class="px-2 py-0.5 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold">Developer</span></td></tr>
+                                <tr><td class="px-4 py-2">Rojas Condori, Fabiana Paola</td><td class="px-4 py-2"><span class="px-2 py-0.5 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold">Developer</span></td></tr>
+                                <tr><td class="px-4 py-2">Velazque Quispe, Flor de Liz</td><td class="px-4 py-2"><span class="px-2 py-0.5 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold">Developer</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Marco Teórico -->
+            <div id="marco-teorico" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6 scroll-mt-20">
+                <div class="flex items-center space-x-3 border-b border-slate-100 pb-3">
+                    <div class="p-2 bg-indigo-50 rounded-lg text-indigo-600"><i class="fa-solid fa-book"></i></div>
+                    <h2 class="text-xl font-bold text-slate-900">2. Marco Teórico</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                        <h3 class="font-bold text-slate-800 text-sm flex items-center"><i class="fa-brands fa-python mr-2 text-indigo-600"></i>ERPNext y Frappe</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed text-justify">
+                            Frappe es un framework full-stack basado en Python y JS. Utiliza <strong>DocTypes</strong> como abstracciones fundamentales de las tablas de datos y vistas de formularios en el sistema.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                        <h3 class="font-bold text-slate-800 text-sm flex items-center"><i class="fa-solid fa-brain mr-2 text-indigo-600"></i>Algoritmo Seleccionado</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed text-justify">
+                            Se optó por <strong>Random Forest</strong> debido a su alta eficiencia capturando patrones no lineales y estacionalidad de manera robusta frente a regresiones lineales simples.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Desarrollo de la Mejora -->
+            <div id="desarrollo" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6 scroll-mt-20">
+                <div class="flex items-center space-x-3 border-b border-slate-100 pb-3">
+                    <div class="p-2 bg-indigo-50 rounded-lg text-indigo-600"><i class="fa-solid fa-gears"></i></div>
+                    <h2 class="text-xl font-bold text-slate-900">3. Desarrollo de la Mejora</h2>
+                </div>
+                
+                <div class="space-y-2">
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Repositorio del Proyecto:</span>
+                    <a href="https://github.com/Suarezsh/ERP-NEXT" target="_blank" class="flex items-center space-x-2 text-sm text-slate-700 bg-slate-50 border border-slate-200 rounded-lg p-2.5 hover:bg-slate-100 transition">
+                        <i class="fa-brands fa-github text-base"></i>
+                        <span class="font-mono text-xs text-indigo-600 overflow-x-auto">https://github.com/Suarezsh/ERP-NEXT</span>
+                    </a>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-base font-bold text-slate-800">3.3. Diseño e Interfaz de Datos</h3>
+                    <p class="text-slate-600 text-sm">El flujo recopila el historial desde <span class="font-mono bg-slate-100 px-1 rounded text-xs">Sales Invoice Item</span> y el stock actual en tiempo real para generar las predicciones.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <div class="p-3 border border-slate-200 rounded-xl bg-white space-y-1">
+                            <span class="font-bold text-slate-800 block"><i class="fa-solid fa-sliders text-indigo-500 mr-1.5"></i>Prediction Settings</span>
+                            <span class="text-slate-500 text-justify block">Configuración general: modelo seleccionado, días mínimos de historial e inventario de seguridad.</span>
+                        </div>
+                        <div class="p-3 border border-slate-200 rounded-xl bg-white space-y-1">
+                            <span class="font-bold text-slate-800 block"><i class="fa-solid fa-play text-indigo-500 mr-1.5"></i>Prediction Run</span>
+                            <span class="text-slate-500 text-justify block">Bitácora e historial de ejecuciones con estatus, fecha y cantidad de productos procesados.</span>
+                        </div>
+                        <div class="p-3 border border-slate-200 rounded-xl bg-white space-y-1">
+                            <span class="font-bold text-slate-800 block"><i class="fa-solid fa-box text-indigo-500 mr-1.5"></i>Product Prediction</span>
+                            <span class="text-slate-500 text-justify block">Resultados específicos por artículo: cantidad, stockout estimado y sugerencia de compra.</span>
+                        </div>
+                        <div class="p-3 border border-slate-200 rounded-xl bg-white space-y-1">
+                            <span class="font-bold text-slate-800 block"><i class="fa-solid fa-calendar-day text-indigo-500 mr-1.5"></i>Prediction Day</span>
+                            <span class="text-slate-500 text-justify block">Tabla hija interna con el desglose pormenorizado día por día de los volúmenes esperados.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Snippet Python -->
+                <div class="space-y-2">
+                    <h3 class="text-sm font-bold text-slate-700 flex items-center"><i class="fa-solid fa-code text-indigo-500 mr-2"></i>Motor de Predicción (utils.py)</h3>
+                    <pre class="bg-slate-900 text-slate-200 rounded-xl p-4 text-xs font-mono overflow-x-auto leading-relaxed shadow-inner">
+def run_prediction_for_item(item_code: str, prediction_days: int = 30, model_type: str = "Random Forest", safety_stock_days: int = 7):
+    history = get_sales_history(item_code)
+    if len(history) &lt; min_history_days: return None
+    
+    dates = [getdate(row.posting_date) for row in history]
+    quantities = [flt(row.qty) for row in history]
+    
+    X, y = build_features(dates, quantities)
+    model = train_model(X, y, model_type)
+    predictions = predict_future(model, dates[-1], prediction_days)
+    
+    return {
+        "item": item_code, 
+        "predicted_total": round(sum(predictions), 2),
+        "suggested_purchase_quantity": calculate_suggestion(predictions)
+    }</pre>
+                </div>
+            </div>
+
+            <!-- 4. Despliegue en Docker -->
+            <div id="docker" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6 scroll-mt-20">
+                <div class="flex items-center space-x-3 border-b border-slate-100 pb-3">
+                    <div class="p-2 bg-indigo-50 rounded-lg text-indigo-600"><i class="fa-brands fa-docker"></i></div>
+                    <h2 class="text-xl font-bold text-slate-900">4. Despliegue en Docker</h2>
+                </div>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    La implementación productiva corre de forma aislada dentro de contenedores usando la arquitectura oficial de <span class="font-semibold text-slate-800">frappe-docker</span>:
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs font-mono text-slate-600">
+                    <div class="bg-slate-50 p-2 rounded border border-slate-200"><i class="fa-solid fa-server mr-1.5 text-indigo-500"></i>backend-1</div>
+                    <div class="bg-slate-50 p-2 rounded border border-slate-200"><i class="fa-solid fa-globe mr-1.5 text-indigo-500"></i>frontend-1</div>
+                    <div class="bg-slate-50 p-2 rounded border border-slate-200"><i class="fa-solid fa-database mr-1.5 text-indigo-500"></i>db-mariadb</div>
+                    <div class="bg-slate-50 p-2 rounded border border-slate-200"><i class="fa-solid fa-bolt mr-1.5 text-indigo-500"></i>redis-cache</div>
+                    <div class="bg-slate-50 p-2 rounded border border-slate-200"><i class="fa-solid fa-clock mr-1.5 text-indigo-500"></i>scheduler</div>
+                    <div class="bg-slate-50 p-2 rounded border border-slate-200"><i class="fa-solid fa-network-wired mr-1.5 text-indigo-500"></i>websocket</div>
+                </div>
+                
+                <div class="space-y-2">
+                    <h3 class="text-sm font-bold text-slate-700">Comandos Principales de Sincronización:</h3>
+                    <pre class="bg-slate-900 text-slate-300 rounded-xl p-4 text-xs font-mono overflow-x-auto space-y-1 shadow-inner">
+# Copiar el código del módulo al backend
+docker cp /ERP-NEXT/erpnext/predictive_analytics frappe_docker-backend-1:/home/frappe/frappe-bench/apps/erpnext/erpnext/
+# Instalar dependencias científicas de Python
+docker exec frappe_docker-backend-1 bash -c "bench pip install scikit-learn pandas numpy"
+# Ejecutar migración y reinicios
+docker exec frappe_docker-backend-1 bash -c "bench --site frontend migrate"
+docker restart frappe_docker-frontend-1</pre>
+                </div>
+            </div>
+
+            <!-- 5. Pruebas y Resultados -->
+            <div id="resultados" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6 scroll-mt-20">
+                <div class="flex items-center space-x-3 border-b border-slate-100 pb-3">
+                    <div class="p-2 bg-indigo-50 rounded-lg text-indigo-600"><i class="fa-solid fa-chart-line"></i></div>
+                    <h2 class="text-xl font-bold text-slate-900">5. Pruebas y Resultados</h2>
+                </div>
+                
+                <div class="bg-indigo-50/50 rounded-xl p-4 border border-indigo-100 text-xs sm:text-sm space-y-2 text-slate-700">
+                    <span class="font-bold text-indigo-900 uppercase tracking-wide block text-xs"><i class="fa-solid fa-database mr-1"></i>Dataset de Validación Real de la Empresa:</span>
+                    <p><strong>Tecnología Peruana S.A.C. (TPS)</strong> • Historial del 01 de Enero de 2025 al 10 de Julio de 2026. Integra 30 ítems tecnológicos, 15 clientes institucionales, 5 proveedores y un total de <strong>443 facturas de venta (Sales Invoices)</strong> estructuradas con la estacionalidad de Fiestas Patrias, Navidad y Cyber Days peruanos.</p>
+                </div>
+
+                <!-- Prediction Results Analysis Tables -->
+                <div class="space-y-4">
+                    <h3 class="text-base font-bold text-slate-800 flex items-center"><i class="fa-solid fa-magnifying-glass-chart text-indigo-500 mr-2"></i>5.4. Resultados del Ítem de Control: GPU-NVI-001</h3>
+                    
+                    <div class="space-y-3">
+                        <span class="text-xs font-bold text-slate-500 block uppercase">Simulación Histórica (14 Jun - 13 Jul 2026)</span>
+                        <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                            <table class="min-w-full text-xs text-slate-600 divide-y divide-slate-200">
+                                <thead class="bg-slate-50 text-slate-700 font-semibold">
+                                    <tr>
+                                        <th class="px-3 py-2 text-left">Producto</th>
+                                        <th class="px-3 py-2 text-center">Predicho</th>
+                                        <th class="px-3 py-2 text-center">Real</th>
+                                        <th class="px-3 py-2 text-center">Stock Act.</th>
+                                        <th class="px-3 py-2 text-center">Compra Sug.</th>
+                                        <th class="px-3 py-2 text-center text-amber-600 font-bold">Error %</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200 bg-white">
+                                    <tr>
+                                        <td class="px-3 py-2 font-mono font-medium">GPU-NVI-001</td>
+                                        <td class="px-3 py-2 text-center">292.97</td>
+                                        <td class="px-3 py-2 text-center">72.00</td>
+                                        <td class="px-3 py-2 text-center">266.00</td>
+                                        <td class="px-3 py-2 text-center text-indigo-600 font-semibold">51.92</td>
+                                        <td class="px-3 py-2 text-center font-bold text-red-600">306.9%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <span class="text-xs font-bold text-slate-500 block uppercase">Pronóstico a Futuro Próximo (14 Jul - 13 Ago 2026)</span>
+                        <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                            <table class="min-w-full text-xs text-slate-600 divide-y divide-slate-200">
+                                <thead class="bg-slate-50 text-slate-700 font-semibold">
+                                    <tr>
+                                        <th class="px-3 py-2 text-left">Producto</th>
+                                        <th class="px-3 py-2 text-center">Demanda Est.</th>
+                                        <th class="px-3 py-2 text-center">Stock Actual</th>
+                                        <th class="px-3 py-2 text-center text-red-600">Stockout Estimado</th>
+                                        <th class="px-3 py-2 text-center text-emerald-600 font-bold">Compra Sugerida</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200 bg-white">
+                                    <tr>
+                                        <td class="px-3 py-2 font-mono font-medium">GPU-NVI-001</td>
+                                        <td class="px-3 py-2 text-center font-semibold">1,030.10</td>
+                                        <td class="px-3 py-2 text-center">266.00</td>
+                                        <td class="px-3 py-2 text-center text-red-600 font-medium">22-07-2026</td>
+                                        <td class="px-3 py-2 text-center bg-emerald-50 text-emerald-700 font-bold">789.05</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Error Analysis Info -->
+                <div class="p-4 bg-amber-50/50 border border-amber-200 rounded-xl text-xs space-y-2 text-slate-700">
+                    <span class="font-bold text-amber-900 uppercase block"><i class="fa-solid fa-triangle-exclamation mr-1"></i>5.5. Diagnóstico del Margen de Error Alto:</span>
+                    <p>El error del 306.9% se atribuye a: 1) Características temporales muy básicas en el entrenamiento. 2) Fuertes picos estacionales acumulativos que desvían los árboles del bosque aleatorio. 3) Efecto bola de nieve por agregación agregada de desviaciones diarias consecutivas.</p>
+                </div>
+            </div>
+
+            <!-- 6 & 7. Conclusiones y Recomendaciones -->
+            <div id="conclusiones" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6 scroll-mt-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Conclusiones -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-2 border-b border-slate-100 pb-2">
+                            <i class="fa-solid fa-clipboard-check text-indigo-600"></i>
+                            <h2 class="text-base font-bold text-slate-900">Conclusiones</h2>
+                        </div>
+                        <ul class="text-xs text-slate-600 space-y-2 list-disc pl-4 text-justify">
+                            <li>Integración transparente del módulo de IA sin alterar código nativo del ERPNext.</li>
+                            <li>Automatización completa mediante hooks diarios nativos de Frappe Scheduler.</li>
+                            <li>Portabilidad integral garantizada gracias a contenedores Docker parametrizados.</li>
+                            <li>Validación exitosa del flujo completo empleando un set robusto de 443 facturas peruanas reales.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Recomendaciones -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-2 border-b border-slate-100 pb-2">
+                            <i class="fa-solid fa-lightbulb text-amber-500"></i>
+                            <h2 class="text-base font-bold text-slate-900">Recomendaciones</h2>
+                        </div>
+                        <ul class="text-xs text-slate-600 space-y-2 list-disc pl-4 text-justify">
+                            <li>Migrar hacia algoritmos robustos de series de tiempo complejas como <span class="font-semibold">Prophet</span> o <span class="font-semibold">SARIMA</span>.</li>
+                            <li>Incorporar gráficos analíticos de tendencias y dispersión en la UI del Workspace de Frappe.</li>
+                            <li>Habilitar la generación automática de Órdenes de Compra vinculadas a la cantidad sugerida de manera directa.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- References -->
+            <footer class="text-center text-xs text-slate-400 pt-4 border-t border-slate-200 space-y-1">
+                <p>Referencias: Documentación Oficial ERPNext, Frappe Framework, Scikit-learn & Docker Documentation (2026).</p>
+                <p>&copy; 2026 EPIS - UNSA. Desarrollado con Tailwind CSS y Font Awesome.</p>
+            </footer>
+        </section>
+    </main>
 
 </body>
-  </html>
+</html>
